@@ -84,7 +84,7 @@
                                     {{ unit }}
                                 </h3>
                             </div>
-                            <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                            <button class="mercadopago-button" formmethod="post" onclick="window.location = '{{ init_point }}'">Pagar la compra</button>
                         </div>
                     </div>
                 </div>
@@ -93,3 +93,6 @@
     </div>
 </div>
    
+{{#section 'head'}}
+<script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
+{{/section}}

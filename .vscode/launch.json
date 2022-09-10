@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch nodemon in debug",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/nodemon",
+        "program": "${workspaceFolder}/app.js",
+        "restart": true,
+        "protocol": "inspector",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "env": {
+            "PORT": 5000,
+        },
+        "port": 9230
+      },
+    ]
+  }
+  
